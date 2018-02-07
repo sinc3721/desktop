@@ -1,0 +1,25 @@
+ SELECT * FROM `adm_lease_user` WHERE `user_id` IN 
+(
+	SELECT 
+
+    ac.`user_id` 
+    --, ac.`available_money` , cm.moneySum
+
+    FROM 
+    `adm_lease_user_account` ac
+    INNER JOIN 
+    (
+        SELECT SUM(CASE  WHEN `change_type` =14 THEN -`available_money` ELSE `available_money` END ) moneySum, `user_id` 
+        FROM `adm_lease_user_account_log` 
+        WHERE `user_id` >0 AND   `change_type` IN  (0,1,2,3,4,5,6,9,10,11,12,13,14)
+        AND `change_desc` NOT LIKE '%自动授予%' 
+        GROUP BY `user_id`
+    )cm on ac.`user_id` = cm.`user_id`
+
+    WHERE cm.moneySum<>ac.`available_money` 
+    AND ac.`user_id` IN 
+    (
+        SELECT DISTINCT(`user_id`)  FROM `adm_lease_recharge_record` 
+    )
+
+)

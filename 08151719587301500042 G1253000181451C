@@ -1,0 +1,50 @@
+08151719587301500042 G1253000181451C
+08151719601608000043 G6762900076826C
+08151739528024300023 20180131200040011100690010810809
+
+update adm_lease_recharge_record set flow_id = 'G1253000181451C' where record_id = '08151719587301500042';
+update adm_lease_recharge_record set flow_id = 'G6762900076826C' where record_id = '08151719601608000043';
+update adm_lease_recharge_record set flow_id = '20180131200040011100690010810809' where record_id = '08151739528024300023';
+											    2018011321001004850284352785
+
+
+
+
+无法处理
+08151720610150900052 20180125200040011100090003581394 21000 15345504558
+08151720619352800053 20180126200040011100230003076090 7000  15345504558
+
+
+
+
+改金额
+
+--5499  08151661389401500088
+840 820 08151623858481900082
+6310 1433 08151624075944500084
+1260 632 08151736503786200043
+
+update adm_lease_recharge_record set amount = 820 where record_id = '08151623858481900082';
+update adm_lease_recharge_record set amount = 1433 where record_id = '08151624075944500084';
+update adm_lease_recharge_record set amount = 632 where record_id = '08151736503786200043';
+
+删除
+
+'08151684842473900047',
+'08151624253683300087',
+'08151522872631600000',
+'08151719601608000043'
+
+select 11760.00 as amount,	'' as ali_sno,	'20171230200040011100890087829830' as flow_id union all		
+select 2000.00 as amount,	'2017123021001004310264630755' as ali_sno,	'' as flow_id union all		
+select 259.00 as amount,	'2017123021001004390269323885' as ali_sno,	'' as flow_id union all		
+select 1259.00 as amount,	'2017123021001004450253352794' as ali_sno,	'' as flow_id union all		
+select 315.00 as amount,	'2017123021001004600522870022' as ali_sno,	'' as flow_id union all		
+select 270.00 as amount,	'2017123021001004600525233481' as ali_sno,	'' as flow_id union all		
+select 1000.00 as amount,	'2017123021001004600525995100' as ali_sno,	'' as flow_id union all		
+select 229.00 as amount,	'2017123021001004640524547915' as ali_sno,	'' as flow_id union all		
+select 380.00 as amount,	'2017123021001004810207240672' as ali_sno,	'' as flow_id union all		
+select 125.00 as amount,	'2017123021001004920226913689' as ali_sno,	'' as flow_id union all		
+select 1.00 as amount,	'2017123021001004990250618228' as ali_sno,	'' as flow_id union all		
+select 1230.00 as amount,	'' as ali_sno,	'20171231200040011100330083290508' as flow_id union all		
+select 8000.00 as amount,	'' as ali_sno,	'20171231200040011100560084393990' as flow_id union all		

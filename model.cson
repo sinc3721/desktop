@@ -1,0 +1,705 @@
+# 经营概况
+api_index_data:
+	url:'/statistic/get_order_panel_data',
+	method:'get',
+	apiServer:'javaApiServer'
+
+#库存表
+api_stock_data:
+	url:'/statistic/get_da_data',
+	method:'post',
+	apiServer:'javaApiServer'
+
+# 逾期数据
+api_index_data_overdue:
+	url:'/statistic/get_overdue_overview',
+	method:'get',
+	apiServer:'javaApiServer'
+
+# 登录用户信息
+api_admin_info:
+    url:'/rental/userInfo',
+    method:'post',
+    apiServer: 'bossApiServer'
+
+# 登录
+api_login_in:
+    url:'/rental/login',
+    method:'post',
+    apiServer: 'bossApiServer'
+
+# 用户
+api_user_list:
+	url: '/user/filter',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_user_detail:
+	url: '/user/user_detail',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_user_auth:
+	url: '/user/auth',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_user_limit:
+	url: '/user/modify_free_deposit_amount',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_user_brinfo:
+	url: '/user/get_user_br_info',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_user_salers:
+	url: '/user/get_zgl_salers',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_user_setRel:
+	url: '/user/assign_users_to_seller',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_user_recharge:
+	url:'/finance/recharge_by_fa',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_user_companyZhima:
+	url:'/user/get_user_eg_zmxy',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_user_editAuth:
+	url: '/user/modify_user_auth',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_user_up_credential:
+	url: '/user/up_credential',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_user_up_ep_sites:
+	url: '/user/up_ep_sites',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_user_remark:
+	url:'/user/add_remark',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_user_sendMsg:
+	url:'/user/send_msg',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_deposit_log:
+	url:'/user/get_deposit_log',
+	method:'get',
+	apiServer:'javaApiServer'
+
+# 商品
+api_goods_list:
+	url: '/goods/get_goods_by_para',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_goods_list_s:
+	url: '/goods/get_goods_by_params',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_goods_detail:
+	url: '/goods/get_goods_detail',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_brand_list:
+	url: '/brand/get_all_brand',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_category_list:
+	url: '/category/get_all_category',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_get_category:
+	url:'/category/get_configs',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_get_prop:
+	url: '/goods/get_prop_info',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_add_prop:
+	url: '/goods/add_prop_info',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_goods_add:
+	url: '/goods/publish_goods',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_goods_del:
+	url:'/goods/delete_goods',
+	method:'post',
+	apiServer: 'javaApiServer'
+
+api_goods_edit:
+	url: '/goods/edit_goods_prop',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_del_goodpic:
+	url:'/goods/delete_goods_pic',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_change_status:
+	url: '/goods/change_status',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_category_filter:
+	url:'/category/get_accessory_category',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_goods_get_by_model:
+	url:'/goods/get_by_model',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_combine_search_goods:
+	url:'/goods/combine_search_goods',
+	method:'post',
+	apiServer:'javaApiServer'
+
+# 订单
+api_order_list:
+	url:'/order/get_orders_by_status',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_send:
+	url:'/order/deliver',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_devices:
+	url:'/order/set_device_list',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_cancel:
+	url:'/order/cancel_order',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_verify_device:
+	url:'/order/verify_device',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_recycle_devices:
+	url:'/order/recycle_device',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_modify_address:
+	url:'/order/modify_address',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_remark:
+	url:'/order/add_remark',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_change_devices:
+	url:'/order/change_device',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_detail:
+	url:'/order/get_order_detail',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_recycle_devices_list:
+	url:'/order/get_order_recycle_device',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_bill_modify:
+	url:'/order/modify_bill',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_confirm_pay:
+	url:'/order/confrim_order_pay',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_fix_deposit:
+	url:'/order/fix_deposit',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_wake_order:
+	url:'/order/wake_order',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_bargain_upload:
+	url:'/order/mark_contract',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_end_check:
+	url:'/order/check_finish_order',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_end:
+	url:'/order/finish_order',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_bind:
+	url: '/order/bind_order',
+	method: 'get',
+	apiServer:'javaApiServer'
+
+api_order_goods_config:
+	url:'/order/modify_order_goods',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_return_device:
+	url:'/order/return_device',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_check_insurance_certificate:
+	url: '/order/check_insurance_certificate',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_close_rent_order:
+	url: '/order/close_rent_order',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_mark_pay_later:
+    url: '/order/mark_pay_later',
+    method:'get',
+    apiServer:'javaApiServer'
+
+api_free_trade:
+	url:'/order/confirm_free_trade',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_modify_mailsn:
+	url:'/order/modify_express',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_over_due_list:
+	url:'/risk/get_user_overdue_list_page',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_order_check_risk:
+	url:'/order/check_risk',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_order_receipt_finish:
+	url:'/order/receipt_finish',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_finish_first_pay:
+	url:'/order/finish_first_pay',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_confirm_first_pay:
+	url:'/order/confirm_first_pay',
+	method:'get',
+	apiServer:'javaApiServer'
+
+
+# 快递
+kuaidi_info:
+    url: '/delivery/get_delivery',
+    method: 'get',
+    apiServer:'appApiServer'
+
+kuaidi_100:
+    url:'http://www.kuaidi100.com/query',
+    method:'get',
+    apiServer:''
+
+# 设备
+api_device_add:
+	url: '/device/publish_devices',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_device_list:
+	url: '/device/get_device_list',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_device_status:
+	url: '/device/put_device_status',
+	method:'put',
+	apiServer: 'javaApiServer'
+
+api_device_conf:
+	url: '/device/put_device_conf',
+	method:'put',
+	apiServer: 'javaApiServer'
+
+api_batch_device_status:
+	url: '/device/batch_change_devices',
+	method:'post',
+	apiServer: 'javaApiServer'
+
+api_generate_sq:
+	url:'/device/generate_unique_sequence',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_device_detail:
+	url:'/device/get_by_deviceid',
+	method:'post',
+	apiServer:'javaApiServer'
+
+#CPS
+api_user_agent:
+	url: '/cps/mark_as_agent',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_bind_agent_relation:
+	url: '/cps/bind_agent_relation',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_channel_list:
+	url: '/cps/filter_distributor',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_agent_list:
+	url: '/cps/agent_list',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_invitee_list:
+	url: '/cps/invitee_list',
+	method: 'get',
+	apiServer: 'javaApiServer'
+
+api_change_inviteCode:
+	url: '/cps/assign_invite_code',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+# 财务
+api_recharge_record:
+	url:'/finance/recharge_record',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_statistics_summary:
+	url: '/finance/statistics_summary',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_statistics_order:
+	url: '/finance/statistics_order',
+	method: 'get',
+	apiServer:'javaApiServer'
+
+api_sale_list:
+	url: '/finance/filter_order',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_sale_calcuList:
+	url: '/finance/statistics_detail',
+	method: 'get',
+	apiServer:'javaApiServer'
+
+api_statistic_stock:
+	url:'/finance/statistic_stock',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_mark_stock:
+	url:'/finance/mark_stock_pay',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_stock_total:
+	url:'/finance/total_value_sets',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_stock_facts:
+	url:'/finance/stock_total_facts',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_stock_receipt:
+	url:'/finance/filter_stocks_by_receipt',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_stock_goods:
+	url:'/finance/filter_stocks_by_goods',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_stock_orders:
+	url:'/finance/filter_stocks_by_orders',
+	method:'post',
+	apiServer:'javaApiServer'
+
+# 产品
+
+api_product_publish:
+	url:'/product/publish_product',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_product_cate:
+	url:'/product/get_category',
+	method:'get',
+	apiServer:'javaApiServer'
+
+# param category_id
+api_product_brand:
+	url:'/product/get_brand',
+	method:'get',
+	apiServer:'javaApiServer'
+
+# param category_id  brand_id
+api_product_serial:
+	url:'/product/get_serial',
+	method:'get',
+	apiServer:'javaApiServer'
+
+# 货品管理
+api_product_list:
+	url:'/product/get_products',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_product_reedit:
+	url:'/product/reedit_product',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_storage_add:
+	url:'/stock/purchase_to_stock',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_storage_number:
+	url:'/stock/generate_batch_no',
+	method:'get',
+	apiServer:'javaApiServer'
+	
+api_purchase_list:
+	url:'/stock/filter_batches',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_storage_list:
+	url:'/stock/filter_storage_list',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_storage_info:
+	url:'/stock/get_receipt_info',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_purchase_bind_storage:
+	url:'/stock/purchase_relate_storage',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_storage_cancel:
+	url:'/stock/cancellation_stock',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_company_add:
+	url:'/corp/add_corp',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_company_list:
+	url:'/corp/get_corps',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_findDev_byGood:
+	url: '/stock/get_relevant_ids',
+	method: 'post',
+	apiServer:'javaApiServer'
+
+api_bindReceipt_toGoods:
+	url: '/stock/relate_ids'
+	method: 'post'
+	apiServer:'javaApiServer'
+
+api_purchase:
+	url:'/user/get_zgl_purchase',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_draw_goods:
+	url:'/stock/draw_goods',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_goods_devices_num:
+	url:'/goods/get_goods_num',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_out_bindReceipt:
+	url: '/stock/draw_match_ids'
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_accessory_category:
+	url:'/category/get_all_accessory_category',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_retrieve_accessory:
+	url:'/stock/retrieve_accessories'
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_assemble_stock:
+	url:'/stock/assemble_to_stock',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_new_in_stock:
+	url:'/stock/new_in_stock',
+	method:'post',
+	apiServer:'javaApiServer'
+
+# 合同接口
+api_contract_third_part:
+    url:'/cloud_contract/get_contract',
+    method:'get',
+    apiServer:'javaApiServer'
+
+api_system_contract_token:
+	url:'/cloud_contract/get_system_token',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_create_contract:
+	url: '/cloud_contract/create_contract',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_invalid_contract:
+	url: '/cloud_contract/invalid_contract',
+	method:'get',
+	apiServer:'javaApiServer'
+
+
+# 设备配件管理
+api_acc_list:
+    url:'/accessory/list',
+    method:'get',
+    apiServer:'javaApiServer'
+api_acc_Detail:
+    url:'/accessory/detail',
+    method:'get',
+    apiServer:'javaApiServer'
+
+# 生产管理
+api_create_device_code:
+    url:'/assemble/create_device_code',
+    method:'post',
+    apiServer:'javaApiServer'
+
+api_device_info:
+    url:'/assemble/get_device_info',
+    method:'get',
+    apiServer:'javaApiServer'
+
+api_accessory_info:
+	url:'/assemble/get_accessory_info',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_do_assemble:
+	url:'/assemble/start_assemble',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_remove_parts:
+	url:'/assemble/remove_accessory',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_assemble_inspect:
+	url:'/assemble/qc',
+	method:'post',
+	apiServer:'javaApiServer'
+
+api_assemble_stockin:
+	url:'/assemble/stock_in',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_assemble_list:
+	url:'/assemble/list',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_delete_device:
+	url:'/assemble/remove_device',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_assemble_producers:
+	url:'/assemble/get_producers',
+	method:'get',
+	apiServer:'javaApiServer'
+
+api_get_product_goods:
+	url: '/product/get_product_by_param',
+	method: 'post',
+	apiServer: 'javaApiServer'
+
+api_update_user:
+	url: '/rental/admin_user/:id',
+	method: 'post',
+	apiServer: 'bossApiServer'
